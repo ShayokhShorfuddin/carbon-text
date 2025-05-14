@@ -1,0 +1,25 @@
+{
+  "name": "carbon-text",
+  "displayName": "Carbon Text",
+  "description": "A green syntax highlighter for carbon.txt files.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "carbontext",
+      "aliases": ["Carbon Text", "carbontext"],
+      "extensions": [""],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "carbontext",
+      "scopeName": "source.carbontext",
+      "path": "./syntaxes/carbontext.tmLanguage.json"
+    }]
+  }
+}
