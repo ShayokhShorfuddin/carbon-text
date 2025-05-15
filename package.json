@@ -2,7 +2,6 @@
 	"name": "carbon-text",
 	"displayName": "Carbon Text",
 	"description": "A green syntax highlighter for carbon.txt files.",
-	"publisher": "Shayokh Shorfuddin",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ShayokhShorfuddin/carbon-text"
