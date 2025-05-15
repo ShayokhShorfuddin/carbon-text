@@ -1,25 +1,52 @@
 {
-  "name": "carbon-text",
-  "displayName": "Carbon Text",
-  "description": "A green syntax highlighter for carbon.txt files.",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.100.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "contributes": {
-    "languages": [{
-      "id": "carbontext",
-      "aliases": ["Carbon Text", "carbontext"],
-      "extensions": [""],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "carbontext",
-      "scopeName": "source.carbontext",
-      "path": "./syntaxes/carbontext.tmLanguage.json"
-    }]
-  }
+	"name": "carbon-text",
+	"displayName": "Carbon Text",
+	"description": "A green syntax highlighter for carbon.txt files.",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.96.2"
+	},
+	"categories": ["Programming Languages"],
+	"contributes": {
+		"languages": [
+			{
+				"id": "carbontext",
+				"aliases": ["Carbon Text", "carbontext"],
+				"extensions": [""],
+				"filenames": ["carbon.txt"],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "carbontext",
+				"scopeName": "source.carbontext",
+				"path": "./syntaxes/carbontext.tmLanguage.json"
+			}
+		],
+		"configurationDefaults": {
+			"editor.tokenColorCustomizations": {
+				"textMateRules": [
+					{
+						"scope": "table.carbontext",
+						"settings": {
+							"foreground": "#A6E22E"
+						}
+					},
+					{
+						"scope": "disclosures-services.carbontext",
+						"settings": {
+							"foreground": "#9D79DB"
+						}
+					},
+					{
+						"scope": "string.carbontext",
+						"settings": {
+							"foreground": "#9AE22E"
+						}
+					}
+				]
+			}
+		}
+	}
 }
