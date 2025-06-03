@@ -1,7 +1,7 @@
 {
 	"name": "carbon-text",
 	"displayName": "Carbon Text",
-	"description": "A green syntax highlighter for carbon.txt files.",
+	"description": "A green syntax highlighter and snippets extension for carbon.txt files.",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ShayokhShorfuddin/carbon-text"
@@ -10,8 +10,14 @@
 	"engines": {
 		"vscode": "^1.78.0"
 	},
-	"categories": ["Programming Languages"],
+	"categories": ["Programming Languages", "Snippets"],
 	"contributes": {
+		"snippets": [
+			{
+				"language": "carbontext",
+				"path": "./snippets/snippets.code-snippets"
+			}
+    	],
 		"languages": [
 			{
 				"id": "carbontext",

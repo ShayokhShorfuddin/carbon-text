@@ -1,0 +1,36 @@
+{
+    "Org Table": {
+        "prefix": "org",
+        
+        "body": [
+            "[org]",
+            "disclosures = []",
+        ],
+        
+        "description": "Inserts an Org table including an empty disclosures array."
+    },
+    "Upstream Table": {
+        "prefix": "upstream",
+
+        "body": [
+            "[upstream]",
+            "services = []",
+        ],
+
+        "description": "Inserts an Upstream table including an empty services array."
+    },
+    "New Disclosure": {
+        "prefix": "disclose",
+
+        "body": "{ doc_type = \"\", url = \"\", domain = \"\" }",
+
+        "description": "Creates a new disclosure object."
+    },
+    "New Service": {
+        "prefix": "service",
+
+        "body": "{ domain = \"\", service_type = \"\" }",
+
+        "description": "Creates a new service object."
+    }
+}
