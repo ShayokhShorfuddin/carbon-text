@@ -4,7 +4,7 @@
         
         "body": [
             "[org]",
-            "disclosures = []",
+            "disclosures = [$1]",
         ],
         
         "description": "Inserts an Org table including an empty disclosures array."
@@ -14,7 +14,7 @@
 
         "body": [
             "[upstream]",
-            "services = []",
+            "services = [$1]",
         ],
 
         "description": "Inserts an Upstream table including an empty services array."
@@ -22,14 +22,14 @@
     "New Disclosure": {
         "prefix": "disclose",
 
-        "body": "{ doc_type = \"\", url = \"\", domain = \"\" }",
+        "body": "{ doc_type = \"${1|web-page,annual-report,sustainability-page,certificate,csrd-report,other|}\", url = \"$2\", domain = \"$3\" }",
 
         "description": "Creates a new disclosure object."
     },
     "New Service": {
         "prefix": "service",
 
-        "body": "{ domain = \"\", service_type = \"\" }",
+        "body": "{ domain = \"$1\", service_type = \"$2\" }",
 
         "description": "Creates a new service object."
     }
